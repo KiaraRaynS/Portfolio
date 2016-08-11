@@ -1,0 +1,31 @@
+body {
+  background-color: #1e2f2f;
+}
+
+.linksidebar {
+  background-color: black;
+  position: fixed;
+  float: left;
+  height: 100%;
+  width: 90px;
+}
+
+.linkbutton {
+  padding-left: 5px;
+}
+
+.contentcolumn {
+  background-color: white;
+  margin: auto;
+  width: 600px;
+  font-family: monospace;
+  border: 3px solid #1c334a;
+}
+
+.textcontentbox {
+  width: 590px;
+  background-color: #ecf2f8;
+  border: 1px solid #476b6b;
+  border-radius: 10px;
+  padding: 5px;
+}
