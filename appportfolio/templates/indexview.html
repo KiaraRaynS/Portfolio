@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block bodycontent %}
   <div class='container'>
@@ -11,17 +12,14 @@
           With a strong passion for creating and problem solving and unquenchable thirst for learning it can be hard to sit still.
           May not be the best match if you're looking for someone to program a time machine with or get many words out of, but if you're on the hunt for someone with a drive to overcome whatever challenge they may face, be it a lack of knowledge on a particular tool or untangling a puzzle of code then you may have found your match.
         </p>
-        <p class='textcontentbox' style='font-family: monospace;'>
-        <strong>Other information: </strong>
-        <p>
         <hr>
         <h4 style='text-align: center;'> Tools</h4>
         <p style='text-align: center;'>Python | Django | Javascript | HTML </p>
         <hr>
         <h4 style='text-align: center;'>Contact</h4>
         <p style='text-align: center;'>
-        <a title='Github' href="{{github}}">Github</a> |
-        <a title='Linked In' href="{{linkedin}}"> Linked In </a></p>
+        <a title='Github' href="{{github}}"><img width='22px' height='22px' src="{% static 'github.png' %}"></a> |
+        <a title='Linked In' href="{{linkedin}}"><img width='33px' height='24px' src="{% static 'linkedin.png' %}"></a></p>
         <p style='font-family: monospace; text-align: center;'>Sherman.Rayn@outlook.com</p>
     </div>
   </div>
