@@ -1,17 +1,34 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block bodycontent %}
-  <div class='portfoliocontent'>
-    <h2 style='text-align: center; font-family: monospace;'>Portfolio</h2>
+  <div style='text-align: center;' class='portfoliocontent'>
+    <h2 style='text-align: center; font-family: monospace;'>Some Examples Of Work</h2>
     <hr>
-  <p>Item thumbnail 1</p>
+  <p><strong>Koquibilis</strong></p>
+  <p><i>Food and recipe tracking webb application.</i></p>
+  <img style='border: 2px solid black;' width='50%' height='50%' src="{% static 'koquibilis.png' %}">
+  <br>
   <a href="{{code1}}" class='btn btn-default'>Code</a>
   <a href="{{link1}}" class='btn btn-default'>Live</a>
+  <hr>
 
-  <p>Item thumbnail 2[Url Shortner]</p>
-  <a class='btn btn-default' href="{{code2}}">Code</a>
 
-  <p>Item 3</p>
-  <a class='btn btn-default' href="">Code</a>
+  <p></p>
+  <p><strong>Url Shortener</strong></p>
+  <p><i>Small web application used to create shortened versions of urls.</i></p>
+  <img style='border: 2px solid black;' height='50%' width='50%' src="{% static 'urlshortner.png' %}">
+  <p><a class='btn btn-default' href="{{code2}}">Code</a></p>
+  <hr>
+
+
+  <p><strong>Catslist</strong></p>
+  <p><i>A mock version of Craigslist</i></p>
+  <img width='50%' height='50%' style='border: 2px solid black;' src="{% static 'catslist.png' %}">
+  <br>
+  <a class='btn btn-default' href="{{code3}}">Code</a>
+  <hr>
+
+
   </div>
 {% endblock %}
