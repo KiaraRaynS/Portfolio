@@ -10,3 +10,7 @@ class IndexView(TemplateView):
         context['github'] = 'https://github.com/KiaraRaynS'
         context['linkedin'] = 'https://www.linkedin.com/in/kiara-sherman-b83564125'
         return context
+
+
+class PortfolioView(TemplateView):
+    template_name = 'portfolioview.html'
