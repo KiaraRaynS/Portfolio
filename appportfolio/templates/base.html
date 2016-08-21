@@ -13,9 +13,9 @@
   <div class='linksidebar'>
     <div class='linkbutton'>
       <p></p>
-      <p><a class='btn btn-default' href="{% url 'indexview' %}">Home</a></p>
-      <p><a class='btn btn-default' href="{% url 'portfolioview' %}">Portfolio</a></p>
-      <p><a class='btn btn-default' href="{% static 'resume.rtf' %}">Resume</a></p>
+      <p><strong><a class='btn btn-default' style="width: 90%; padding: 5px;" href="{% url 'indexview' %}">Index</a></strong></p>
+      <p><a style="width: 90%; padding: 5px;" class='btn btn-default' href="{% url 'portfolioview' %}">Portfolio</a></p>
+      <p><a style="width: 90%; padding: 5px;" class='btn btn-default' href="{% static 'resume.rtf' %}">Resume</a></p>
     </div>
   </div>
   {% block bodycontent %}
