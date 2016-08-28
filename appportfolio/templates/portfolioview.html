@@ -2,15 +2,14 @@
 {% load static %}
 
 {% block bodycontent %}
-  <div style='text-align: center;' class='portfoliocontent'>
+  <div style='text-align: center; vertical-align: middle;' class='portfoliocontent'>
     <h2 style='text-align: center; font-family: monospace;'>Some Examples Of Work</h2>
     <hr>
   <p><strong>Koquibilis</strong></p>
-  <p><i>Food and recipe tracking web application.</i></p>
-  <img style='border: 2px solid black; text-align: center;' width='50%' height='50%' src="{% static 'koquibilispreview.png' %}">
-  <img style='border: 2px solid black; text-align: center;' width='50%' height='50%' src="{% static 'koquibilis.png' %}">
-  <br>
-  <a href="{{code1}}" class='btn btn-default'>Code</a>
+  <p><i>Food inventory and recipe bookmark handling application.</i></p>
+  <img style='border: 2px solid black;' height='50%' width='50%' src="{% static 'koquibilispreview.png' %}">
+  <img style='border: 2px solid black;' height='50%' width='50%' src="{% static 'koquibilis.png' %}">
+  <p></p><a href="{{code1}}" class='btn btn-default'>Code</a>
   <a href="{{link1}}" class='btn btn-default'>Live</a>
   <hr>
 
@@ -23,15 +22,13 @@
   <p><a class='btn btn-default' href="{{code2}}">Code</a></p>
   <hr>
 
-
+  <p></p>
   <p><strong>Catslist</strong></p>
   <p><i>A mock version of Craigslist</i></p>
   <img style='border: 2px solid black;' height='50%' width='50%' src="{% static 'catslistpreview.png' %}">
   <img style='border: 2px solid black;' height='50%' width='50%' src="{% static 'catslist.png' %}">
-  <br>
-  <a class='btn btn-default' href="{{code3}}">Code</a>
+  <p><a class='btn btn-default' href="{{code3}}">Code</a></p>
   <hr>
-
 
   </div>
 {% endblock %}
